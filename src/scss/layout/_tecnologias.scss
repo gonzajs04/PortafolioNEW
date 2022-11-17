@@ -70,5 +70,24 @@ img{
     border-radius: 30px;
 }
 }
+.logos h2{
+    margin: 0;
+    height: 10px;
+    font-size: 25px;
+    font-weight: 800;
+}
 
+.logos{
+    &.js{
+        width: 200px;
+       h2{
+        height: 50px;
+       }
+    }
+    &.BT{
+        h2{
+            height: 40px;
+        }
+    }
+}
 
