@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Contactame</title>
+</head>
+<body>
+    <div class="contenedor-nav">
+        <nav>
+
+            <a class= "hover-underline-animation" href="index.html">Inicio</a>
+
+        </nav>
+    </div>
+
+<div class="contenedor-form">
+
+    <form action="#" class="form-contacto">
+        <fieldset><legend>Informacion del contacto</legend>
+        
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan" required>
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Ej: mimail@mail.com" require>
+    
+          <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+      
+        </fieldset>
+
+
+        <fieldset><legend>Quien se esta contactado?</legend>
+          
+            <select name="entidad" id="entidad">
+                <option value="0" selected= "true" disabled="disabled">---Seleccione---</option>
+                <option value="1">Persona</option>
+                <option value="2">Empresa</option>
+            </select>
+        </fieldset>
+
+
+
+        <input  class="btn-enviar" type="submit"></button>
+    </form>
+</div>
+
+
+<div class="imagen-contacto">
+
+</div>
+<footer class="footer">
+        
+    <p>portafolio = new Portafolio(creado, &copy, Gonzalo Hernandez)</p>
+
+</footer>
+
+    <script src="src/js/app.js"></script>
+
+
+</body>
+</html>

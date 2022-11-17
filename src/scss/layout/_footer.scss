@@ -1,0 +1,35 @@
+@use '../base/mixins' as m;
+.footer{
+ 
+    background: rgb(1,7,29);
+    background: linear-gradient(270deg, rgba(1,7,29,1) 0%, rgba(0,1,10,1) 100%);
+    padding: 1rem;
+    text-align: center;
+   
+    p{
+        color: white;
+        font-size: 15px;
+        margin: 0;
+        animation: parpadeo 2s linear infinite;
+        transition: .5s ease;
+
+    }
+    @include m.tablet{
+        p{
+font-size: 20px;
+        }
+        
+    }
+}
+
+
+@keyframes parpadeo{
+    0%,41%,45%,47%,100%{
+       opacity: 1;
+       text-shadow: 0px 0px 10px rgba(0,76,243,1);
+    }
+    42%,44%,46%,48%,49.5%,50%{
+       opacity: 0;
+       text-shadow: none;
+    }
+}

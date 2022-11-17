@@ -1,0 +1,117 @@
+@use '../base/mixins' as m;
+
+ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    li{
+        padding: .7rem 0;
+        &:hover{
+            border-left: 3px solid #3232f6;
+            transition: border .5s;
+        }
+    }
+}
+
+.contenido-navegacion{
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+
+/*NAVEGACION*/
+    .navegacion{
+        transition: all .5s ease-in-out;
+        position: relative;
+        background-color: #1c1c1c87;
+        visibility: hidden;
+        max-width: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        a{
+            color: white;
+            font-weight: 600;
+            padding: 1rem 0;
+            letter-spacing: .5px;
+            font-size: 20px;
+        }
+        &.visible{
+            visibility: visible;
+            opacity: 1;
+             max-width: 100%;
+             transition: all .5s ease-in-out;
+          }
+    }
+
+    /*TABLET NAVEGACION*/
+   @include m.tablet{
+    .navegacion{   
+      
+        &.visible{
+         
+             max-width: 300px;
+            
+          }
+    }
+    
+   }
+}
+
+.toggle{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+   &:hover{
+    cursor: pointer;
+   }
+   &.novisible{
+    visibility: hidden;
+   }
+  
+}
+.close{
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+    top: 5%;
+    left: 85%;
+
+    &:hover{
+        cursor: pointer;
+       }
+      
+   }
+
+
+
+   //DARK MODE BTN
+
+
+
+   .btn-dark{
+    position: absolute;
+    top: 5.5%;
+    left: 10%;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: white;
+    &:hover{
+        cursor: pointer;
+        color:black;
+       text-shadow: -1px 0px 5px rgba(164, 164, 164, 0.872);
+    }
+   }
+
+

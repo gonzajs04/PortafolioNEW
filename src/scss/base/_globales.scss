@@ -1,0 +1,50 @@
+@use 'variables' as v;
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin: 0;
+    height: 100%;
+}
+p {
+    color: v.$negro;
+    font-size: 2rem;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: v.$fuentePrincipal;
+    font-weight: 510;
+}
+
+p,a{
+    font-family: v.$fuentePrincipal; 
+}
+.p-translate{
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}

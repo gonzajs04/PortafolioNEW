@@ -1,0 +1,75 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.contenedor-form{
+    height: 93.5%;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+  background-color: #000000a7;
+
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    font-weight: 600;
+
+    
+    label{
+        display: block;
+        font-family: v.$fuentePrincipal;
+        margin: .5rem 0;
+    }
+    input:not([type="submit"]){
+        width: 100%;
+        height: 30px;
+        padding: 10px 10px;
+    }
+    input[type="submit"]{
+        display: block;
+        background-color: transparent;
+        border: 2px solid rgb(53, 151, 237);
+        outline: none;
+        padding: 1rem;
+        margin: 2rem 0;
+        color:white;
+        font-weight: 700;
+        &:hover{
+           background-color: rgb(53, 151, 237);
+           padding: 1.2rem;
+            cursor: pointer;
+            transition: all .5s ease;
+        }
+       
+    }
+    input, textarea,select{
+        color: white;
+        background-color: black;
+        border: 1px solid rgb(53, 151, 237);
+        border-radius: 3px;
+        outline: 0;
+    }
+    select{
+        width: 100%;
+        height: 35px;
+    }
+    textarea{
+    width: 100%;
+    }
+    fieldset, legend{
+        color: rgb(217, 228, 240);
+        font-size: 19px;
+    }
+}
+
+.imagen-contacto{
+    background-image: url('/build/img/imagen-contacto.webp');
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

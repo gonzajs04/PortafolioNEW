@@ -1,0 +1,88 @@
+
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+
+.sobre-mi{
+
+background-color: rgb(19, 19, 19);
+padding: 4rem 0;
+}
+.contenedorg-sobremi{
+    position: relative;
+    z-index: 99;
+    height: 100%;
+}
+.contenedor-sobremi{
+    height: 100%;
+    width: 100%;
+
+    .grid-sobremi{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        h2,p{
+            color: white;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        @include m.tablet{
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(2,1fr);
+                
+        h2,p{
+            
+            padding: 0;
+            text-align: left;
+        }
+    
+        }
+    
+    }
+
+   
+
+}
+
+
+.sobremi-img{
+    width: 350px;
+}
+
+/*PARTICULAS*/
+
+#particles-js{
+    position: absolute;
+    background-color: rgb(19, 19, 19);
+    height: 800px;
+    width: 100%;
+ 
+}
+
+.sobremi-texto{
+p{
+    font-size: 17px;
+    strong{
+        a{
+            color: white;
+        }
+    }
+}
+ul{
+    color: white;
+    list-style:circle;
+    padding: 0 3rem;
+    text-align: left;
+    &:hover{
+        border: 1px solid white;
+        cursor: pointer;
+    }
+    li{
+        border-left: none;
+        font-family: v.$fuentePrincipal;
+    }
+}
+}

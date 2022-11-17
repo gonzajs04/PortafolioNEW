@@ -1,0 +1,67 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+body{
+    &.dark-mode{
+        .close{
+            color: black;
+            text-shadow: .5px .5px 4px rgba(255, 255, 255, 0.923);
+        }
+        .btn-dark{
+            color: black;
+            text-shadow: .1px .5px 4px rgba(255, 255, 255, 0.923);
+            &:hover{
+                color: white;
+            }
+        }
+      
+        .tecnologias{
+            h2{
+                color: white;
+            }
+     
+            background: rgb(18, 18, 18);
+        }
+        .contenedor-vermas{
+            a{
+                color: rgb(17, 17, 17);
+            }
+        }
+
+        .tecnologias{
+                -webkit-box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
+                -moz-box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
+                box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
+                a{
+                    color: white;
+                }
+        }
+
+        
+     .proyectos{
+        -webkit-box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
+        -moz-box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
+        box-shadow: 1px 13px 22px -8px rgba(176,176,176,1);
+        background-color:rgb(19, 19, 19);
+       
+     
+        h3,p{
+            color: white;
+        }
+        .linea-divisora{
+            border-color: rgba(255, 255, 255, 0.771);
+        }
+        a{
+            filter: invert(100%);
+        }
+        h2{
+            color: white;
+        }
+     } 
+
+     .footer{
+        box-shadow: 0 0 5px 0 #b0b0b0;
+        background: black;
+     }
+    }
+}

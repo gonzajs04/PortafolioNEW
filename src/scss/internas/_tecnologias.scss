@@ -1,0 +1,48 @@
+
+
+.contenedor-nav{
+    padding: 1.2rem 0;
+    background: rgb(1,7,29);
+    background: linear-gradient(270deg, rgba(1,7,29,1) 0%, rgba(0,1,10,1) 100%);
+    text-align: center;
+    a{
+        color: white;
+        font-size: 2rem;
+    
+    }
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #12f6df;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .hover-underline-animation{
+    &:hover{
+        font-size: 2.1rem;
+        transition: font-size .5s ease-out;
+    }
+  }
+
+  .gulp{
+    width: 100px;
+  }
+  
